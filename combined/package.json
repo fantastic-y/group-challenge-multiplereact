@@ -18,7 +18,14 @@
     "react-move": "2.8.0",
     "react-scripts": "4.0.3",
     "reactstrap": "^9.0.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "@react-vertex/core": "3.0.0",
+    "@react-vertex/dom-hooks": "1.11.0",
+    "@react-vertex/geometry-hooks": "3.0.0",
+    "@react-vertex/material-hooks": "3.0.0",
+    "@react-vertex/math-hooks": "2.0.0",
+    "@react-vertex/orbit-camera": "3.0.0",
+    "d3-timer": "1.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

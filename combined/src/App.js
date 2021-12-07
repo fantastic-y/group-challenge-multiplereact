@@ -1,18 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 import BarChart from './BarChart';
-import Tree from './Tree';
+import Treeexpo from './Treeexpo';
 import React from 'react';
-import {Button} from 'reactstrap';
+// import Scene from './Scene';
+import ReactSphere from './ReactSphere';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
-  const [show, setShow] = React.useState(false);
-  const showpage = () => setShow(!show);
-
   return (
     <div className="App">
-      <Button onClick={showpage}>Show BarChart</Button>
-      <BarChart hidden={show}/>
+      
+      {/* <Link to="/barchart">Barchart</Link> */}
+      <ul>
+        <li><a href="/barchart">BarChart</a></li>
+        <li><a href="/tree">Tree</a></li>
+        <li><a href="/sphere">Sphere</a></li>
+      </ul>
+
+      <Router>
+        <Routes>
+          <Route path="/barchart" element={<BarChart/>} />
+          <Route path="/tree" element={<Treeexpo/>} />
+          {/* <Route path="/sphere" element={<ReactSphere/>} /> */}
+        </Routes>
+      </Router>
+      
       {/* <Tree /> */}
     </div>
 

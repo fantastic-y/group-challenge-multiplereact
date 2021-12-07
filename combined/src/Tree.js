@@ -6,7 +6,7 @@ import { hierarchy } from "d3-hierarchy";
 import Links from "./LinksMove";
 import Nodes from "./NodesMove";
 
-export default class App extends Component {
+export default class Treeexpo extends Component {
   state = {
     layout: "cartesian",
     orientation: "horizontal",
