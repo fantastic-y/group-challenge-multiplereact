@@ -4,7 +4,7 @@ import { Canvas } from "@react-vertex/core";
 import { useViewportSize } from "@react-vertex/dom-hooks";
 import Scene from "./Scene";
 
-export default function ReactSphere() {
+export default function Example() {
   const { width, height } = useViewportSize();
 
   return (

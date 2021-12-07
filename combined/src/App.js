@@ -3,7 +3,7 @@ import BarChart from './BarChart';
 import Treeexpo from './Treeexpo';
 import React from 'react';
 // import Scene from './Scene';
-import ReactSphere from './ReactSphere';
+import Example from './ReactSphere';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/barchart" element={<BarChart/>} />
           <Route path="/tree" element={<Treeexpo/>} />
-          {/* <Route path="/sphere" element={<ReactSphere/>} /> */}
+          {/* <Route path="/sphere" element={<Example/>} /> */}
         </Routes>
       </Router>
       
